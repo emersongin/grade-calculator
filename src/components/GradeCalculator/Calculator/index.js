@@ -18,6 +18,7 @@ export default function Calculator(props) {
 
     return (
         <View style={styles.content}>
+            <Text style={styles.title}>Calcular Média</Text>
             <View style={styles.contentInputs}>
                 <TextInput
                     style={styles.input}
@@ -38,16 +39,22 @@ export default function Calculator(props) {
                     keyboardType = 'numeric'
                     maxLength = {2}
                     onChangeText={onChangeNota3}
-                    onSubmitEditing={}
                     value={nota3}
                 />
             </View>
-            <Button style={styles.button} color="#E06839" title="Calcular Média" onPress={calculate}></Button>
+            <Button color="#E06839" title="Calcular Média" onPress={calculate}/>
         </View>
     );
 }
 
 const styles = StyleSheet.create({
+    title: {
+        textAlign: 'center',
+        fontWeight: 'bold',
+        fontSize: 24,
+        textTransform: 'uppercase',
+        color: 'red'
+    },
     content: {
         padding: 10,
     },
