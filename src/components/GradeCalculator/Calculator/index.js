@@ -38,6 +38,7 @@ export default function Calculator(props) {
                     keyboardType = 'numeric'
                     maxLength = {2}
                     onChangeText={onChangeNota3}
+                    onSubmitEditing={}
                     value={nota3}
                 />
             </View>
