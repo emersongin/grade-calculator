@@ -10,7 +10,7 @@ export default function GradeCalculator() {
     };
 
     return (
-        <View style={styles.container}>  
+        <View style={styles.box}>  
             <DisplayResult media={media}/>
             <Calculator calculateAverage={ media => calculateAverage(media) }/>
         </View>
@@ -18,8 +18,9 @@ export default function GradeCalculator() {
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
+    box: {
+        margin: 20,
+        padding: 10,
+        borderWidth: 4,
     }
 });

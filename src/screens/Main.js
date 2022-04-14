@@ -1,13 +1,13 @@
 import { StyleSheet, ScrollView, Text, View } from 'react-native';
 import GradeCalculator from '../components/GradeCalculator';
-import GradeInterval from '../components/GradeInterval';
+import IntervalCalculator from '../components/IntervalCalculator';
 import TabNavigator from '../components/TabNavigator';
 
 export default function Main() {
     return (
         <ScrollView style={styles.background}>
             <GradeCalculator/>
-            <GradeInterval/>
+            <IntervalCalculator/>
             <TabNavigator/>
         </ScrollView>
     );

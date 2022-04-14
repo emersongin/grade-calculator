@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 
 export default function Calculator(props) {
-    const [nota1, onChangeNota1] = useState('0');
-    const [nota2, onChangeNota2] = useState('0');
-    const [nota3, onChangeNota3] = useState('0');
+    const [nota1, onChangeNota1] = useState(null);
+    const [nota2, onChangeNota2] = useState(null);
+    const [nota3, onChangeNota3] = useState(null);
 
     const calculate = () => {
         let value1 = parseInt(nota1);

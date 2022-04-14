@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 
-export default function GradeInterval() {
+export default function IntervalCalculator() {
     const [inteval, onChangeInterval] = useState(null);
 
     return (
-        <View>
+        <View style={styles.box}>
             <Text style={styles.title}>Calcular Intervalo</Text>
             <TextInput
                 style={styles.input}
@@ -33,8 +33,9 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         padding: 10,
     },
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-    }
+    box: {
+        margin: 20,
+        borderWidth: 4,
+        padding: 10,
+    },
 });

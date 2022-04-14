@@ -30,12 +30,11 @@ export default function DisplayResult(props) {
 
 const styles = StyleSheet.create({
 	header: {
-        marginLeft: 4,
         marginTop: 24,
         marginBottom: 40,
 		height: 48,
         borderRadius: 5,
-		width: "98%",
+		width: "100%",
         backgroundColor : "#E06839",
         elevation: 10,
         shadowColor: "#000",
