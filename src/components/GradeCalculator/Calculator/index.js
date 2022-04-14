@@ -1,5 +1,6 @@
+import styles from './style';
 import { useState } from 'react';
-import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
+import { Text, View, TextInput, Button } from 'react-native';
 
 export default function Calculator(props) {
     const [nota1, onChangeNota1] = useState(null);
@@ -46,25 +47,3 @@ export default function Calculator(props) {
         </View>
     );
 }
-
-const styles = StyleSheet.create({
-    title: {
-        textAlign: 'center',
-        fontWeight: 'bold',
-        fontSize: 24,
-        textTransform: 'uppercase',
-        color: 'red'
-    },
-    content: {
-        padding: 10,
-    },
-    contentInputs: {
-        marginBottom: 40,
-    },
-    input: {
-        height: 40,
-        margin: 12,
-        borderWidth: 1,
-        padding: 10,
-    }
-});

@@ -1,4 +1,5 @@
-import { StyleSheet, Text, View } from 'react-native';
+import styles from './style';
+import { Text, View } from 'react-native';
 import { MaterialIcons  } from '@expo/vector-icons';
 
 export default function TabNavigator() {
@@ -12,17 +13,3 @@ export default function TabNavigator() {
         </View>
     );
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flexDirection: 'row',
-        height: 50,
-        width: '100%',
-        backgroundColor: '#ccc',
-        justifyContent: 'space-around',
-        alignItems: 'center',
-    },
-    icon: {
-        //
-    }
-});
